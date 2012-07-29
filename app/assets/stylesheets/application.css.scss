@@ -67,10 +67,16 @@
 
 h1.title {
   border-bottom: 1px solid #DDD;
-  font-size: 120%;
+  font-size: 130%;
   font-weight: bold;
   line-height: inherit;
   padding-bottom: 5px;
+}
+
+h2 {
+  font-size: 115%;
+  line-height: inherit;
+  font-weight: bold;
 }
 
 input.widest {
@@ -86,13 +92,23 @@ textarea.wysiwyg {
   box-sizing: border-box;
 }
 
+label.inline-label {
+  display: inline;
+}
+
 .advanced_options {
+  margin-top: 15px;
   input[type='text'], textarea, select {
     width: 80%;
+  }
+
+  div.folding {
+    margin-top: 15px;
   }
 }
 
 .form_actions {
+  margin-top: 15px;
   .save {
     color: #509958;
   }
