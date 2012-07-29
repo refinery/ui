@@ -1,6 +1,5 @@
 RefineryUi::Application.routes.draw do
-  get "home/home"
-  root :to => "home/home"
+  root :to => "home#home"
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

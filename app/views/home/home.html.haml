@@ -1,1 +1,44 @@
-%h1 Home sweet home!
+.site_bar
+  .container
+    .sixteen.columns
+      .four.columns.alpha
+        %b
+          = link_to 'Website Name', '#'
+        = link_to 'Switch to Site', '#'
+      .four.columns.offset-by-four
+        Refinery
+      .four.columns.omega
+        Hello
+        = link_to 'parndt', '#'
+        |
+        = link_to 'Sign out', '#'
+        |
+        = link_to 'Help', '#'
+
+.container
+  .sixteen.columns
+    .four.columns.alpha
+      %p
+        EN
+        |
+        %a{:href => '#'} FR
+        |
+        %a{:href => '#'} PT
+
+      %ul
+        %li.first= link_to 'Dashboard', '#'
+        %li= link_to 'Pages', '#'
+        %li= link_to 'Files', '#'
+        %li= link_to 'Images', '#'
+        %li= link_to 'Users', '#'
+        %li 
+          = link_to 'Blog', '#'
+          %ul
+            %li= link_to 'Categories', '#'
+            %li= link_to 'Posts', '#'
+            %li= link_to 'Settings', '#'
+        %li= link_to 'News', '#'
+        %li= link_to 'Copywriting', '#'
+          
+    .twelve.columns.omega
+      Main body content.
