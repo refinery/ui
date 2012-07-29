@@ -1,0 +1,32 @@
+#wysihtml5-toolbar{:style => 'display: none;'}
+  %a{:'data-wysihtml5-command' => 'bold'} Bold
+  %a{:'data-wysihtml5-command' => 'italic'} Italic
+  %a{:'data-wysihtml5-command' => 'underline'} Underline
+  %a{:'data-wysihtml5-command' => 'insertOrderedList'} OL
+  %a{:'data-wysihtml5-command' => 'insertUndorderedList'} UL
+  %a{:'data-wysihtml5-command' => 'foreColor', :'data-wysihtml5-command-value' => 'red'} Red
+  %a{:'data-wysihtml5-command' => 'foreColor', :'data-wysihtml5-command-value' => 'green'} Green
+  %a{:'data-wysihtml5-command' => 'foreColor', :'data-wysihtml5-command-value' => 'blue'} Blue
+  %a{:'data-wysihtml5-command' => 'foreColor', :'data-wysihtml5-command-value' => 'black'} Black
+  %a{:'data-wysihtml5-command' => 'foreColor', :'data-wysihtml5-command-value' => 'orange'} Orange
+
+  %a{:'data-wysihtml5-command' => 'createLink'} Insert Link
+  %div{:'data-wysihtml5-dialog' => 'createLink', :style => 'display: none;'}
+    %label
+      Link:
+      %input{:'data-wysihtml5-dialog-field' => 'href', :value => 'http://', :class => 'text'}
+    %a{:'data-wysihtml5-dialog-action' => 'save'} OK
+    %a{:'data-wysihtml5-dialog-action' => 'cancel'} Cancel
+
+= text_field_tag 'content', nil, :id => 'wysihtml5-textarea', :class => 'wysiwyg'
+
+= submit_tag 'Submit'
+
+- content_for :javascripts do
+  :javascript
+    var editor = new wysihtml5.Editor('wysihtml5-textarea', {
+      toolbar: 'wysihtml5-toolbar',
+      parserRules: wysihtml5ParserRules,
+      stylesheets: "#{stylesheet_path('wysihtml5')}"
+    });
+

@@ -12,4 +12,7 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require wysihtml5
 //= require_tree .
+//= require_self
+

@@ -41,4 +41,12 @@
         %li= link_to 'Copywriting', '#'
           
     .twelve.columns.omega
-      Main body content.
+      %h1.title
+        Add a page
+
+      = form_tag('#', :method => :post) do
+        = label_tag 'title'
+        = text_field_tag 'title', nil, :placeholder => 'Post title', :class => 'widest'
+
+        = render :partial => 'wysiwyg'
+
