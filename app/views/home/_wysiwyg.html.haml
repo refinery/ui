@@ -18,7 +18,7 @@
     %a{:'data-wysihtml5-dialog-action' => 'save'} OK
     %a{:'data-wysihtml5-dialog-action' => 'cancel'} Cancel
 
-= text_field_tag 'content', nil, :id => 'wysihtml5-textarea', :class => 'wysiwyg'
+= text_area_tag 'content', nil, :id => 'wysihtml5-textarea', :class => 'wysiwyg', :placeholder => placeholder_text || ""
 
 = submit_tag 'Submit'
 

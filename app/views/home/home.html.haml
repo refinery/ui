@@ -48,5 +48,16 @@
         = label_tag 'title'
         = text_field_tag 'title', nil, :placeholder => 'Post title', :class => 'widest'
 
-        = render :partial => 'wysiwyg'
+        = render :partial => 'wysiwyg', :locals => {:placeholder_text => 'Say something here!'}
 
+        %div.advanced_options
+          %a.folding{:href => '#'} Advanced Options
+          %div.folding{:style => 'display: none'}
+
+            %h2 Page Settings
+
+            = label_tag 'parent_page'
+            = select_tag 'parent_page', options_for_select([['Page 1', 1], ['Page 2', 2], ['Page 3', 3]]), :include_blank => true
+
+            = label_tag 'menu_title'
+            = text_field_tag 'menu_title', nil, :placeholder => 'What shows in the menu'

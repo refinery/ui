@@ -16,3 +16,11 @@
 //= require_tree .
 //= require_self
 
+$(function() {
+
+  $('a.folding').live('click', function(e) {
+    e.preventDefault();
+    $('div.folding', $(this).parent()).slideToggle();
+  });
+
+});
