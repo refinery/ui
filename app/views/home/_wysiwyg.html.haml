@@ -20,8 +20,6 @@
 
 = text_area_tag 'content', nil, :id => 'wysihtml5-textarea', :class => 'wysiwyg', :placeholder => placeholder_text || ""
 
-= submit_tag 'Submit'
-
 - content_for :javascripts do
   :javascript
     var editor = new wysihtml5.Editor('wysihtml5-textarea', {

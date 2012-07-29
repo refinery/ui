@@ -1,0 +1,30 @@
+%div.advanced_options
+  %a.folding{:href => '#'} Advanced Options
+  %div.folding{:style => 'display: none'}
+    .six.columns.alpha
+      %h2 Page Settings
+
+      = label_tag 'parent_page'
+      = select_tag 'parent_page', options_for_select([['Page 1', 1], ['Page 2', 2], ['Page 3', 3]]), :include_blank => true
+
+      = label_tag 'menu_title'
+      = text_field_tag 'menu_title', nil, :placeholder => 'What shows in the menu'
+
+      %fieldset
+        = label_tag 'skip_top_level_page'
+        = check_box_tag 'skip_top_level_page'
+        %span Redirect visitors to the first sub-level page
+
+      = label_tag 'redirect_url', 'Forward this page to another website or page'
+      = text_field_tag 'redirect_url', nil, :placeholder => 'e.g. http://google.com or /blog'
+    .six.columns.omega
+      %h2 Search Engine Optimization
+
+      = label_tag 'browser_title'
+      = text_field_tag 'browser_title', nil, :placeholder => 'Browser title'
+
+      = label_tag 'meta_keywords'
+      = text_field_tag 'meta_keywords', nil, :placeholder => 'A space-separated list of keywords'
+
+      = label_tag 'meta_description'
+      = text_area_tag 'meta_description', nil, :placeholder => 'Describe this page'

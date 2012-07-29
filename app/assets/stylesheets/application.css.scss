@@ -12,6 +12,8 @@
  *= require_self
  */
 
+// Skeleton overrides
+
 .site_bar {
   background: transparent image-url('site_bar.png') top left repeat;
   color: #DDDDDD;
@@ -35,12 +37,18 @@
     text-align: center;
   }
 
-  .site_name {
-    font-weight: bold;
-    font-size: 120%;
-    color: #FFF;
-    text-decoration: none;
+  h1.site_name {
+    line-height: inherit;
+    margin-bottom: 0;
+    font-size: 100%;
+    display: inline;
     padding-right: 10px;
+
+    a {
+      font-weight: bold;
+      color: #FFF;
+      text-decoration: none;
+    }
   }
 
   .refinery_logo {
@@ -57,6 +65,13 @@
   }
 }
 
+h1.title {
+  border-bottom: 1px solid #DDD;
+  font-size: 120%;
+  font-weight: bold;
+  line-height: inherit;
+  padding-bottom: 5px;
+}
 
 input.widest {
   width: 100%;
@@ -74,5 +89,15 @@ textarea.wysiwyg {
 .advanced_options {
   input[type='text'], textarea, select {
     width: 80%;
+  }
+}
+
+.form_actions {
+  .save {
+    color: #509958;
+  }
+
+  .remove {
+    color: #920008;
   }
 }

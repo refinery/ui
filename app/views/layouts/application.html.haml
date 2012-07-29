@@ -9,6 +9,14 @@
     = javascript_include_tag 'application'
     = csrf_meta_tags
 
-  %body
-    = yield
+  %body.admin
+    = render :partial => 'site_bar'
+
+    .container
+      .sixteen.columns
+        .four.columns.alpha
+          = render :partial => 'home/sidebar'
+        .twelve.columns.omega
+          = yield
+
     = yield :javascripts

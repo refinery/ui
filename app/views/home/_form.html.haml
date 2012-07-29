@@ -1,0 +1,12 @@
+%h1.title
+  Add a page
+
+= form_tag('#', :method => :post) do
+  = label_tag 'title'
+  = text_field_tag 'title', nil, :placeholder => 'Post title', :class => 'widest'
+
+  = render :partial => 'wysiwyg', :locals => {:placeholder_text => 'Say something here!'}
+
+  = render :partial => 'advanced_options'
+
+  = render :partial => 'form_actions'
