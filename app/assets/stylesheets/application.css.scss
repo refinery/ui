@@ -22,6 +22,39 @@
   a {
     color: #DDDDDD;
   }
+
+  .left {
+    text-align: left;
+  }
+
+  .right {
+    text-align: right;
+  }
+
+  .center {
+    text-align: center;
+  }
+
+  .site_name {
+    font-weight: bold;
+    font-size: 120%;
+    color: #FFF;
+    text-decoration: none;
+    padding-right: 10px;
+  }
+
+  .refinery_logo {
+    margin: 5px auto 0;
+    background: image-url('refinery_logo_sprite.png') no-repeat 0 -18px;
+    display: block;
+    text-indent: -9999em;
+    width: 30px;
+    height: 15px;
+
+    &:hover {
+      background: image-url('refinery_logo_sprite.png') no-repeat 0 0;
+    }
+  }
 }
 
 
@@ -36,4 +69,10 @@ textarea.wysiwyg {
   -ms-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+}
+
+.advanced_options {
+  input[type='text'], textarea, select {
+    width: 80%;
+  }
 }
