@@ -1,12 +1,12 @@
 .site_bar
   .container
     .sixteen.columns
-      .four.columns.alpha.left
-        %h1.site_name= link_to 'Website Name', '#'
+      .one-third.column.alpha#site_name
+        %h1 Website Name
         = link_to 'Switch to Site', '#', :class => 'switch_to_site'
-      .eight.columns.center
+      .one-third.column#refinery_logo
         = link_to 'Powered by Refinery CMS', 'http://www.refinerycms.com', :class => 'refinery_logo'
-      .four.columns.omega.right
+      .one-third.column.omega#login_details
         Hello
         = link_to 'parndt', '#'
         |

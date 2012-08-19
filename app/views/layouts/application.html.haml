@@ -10,12 +10,12 @@
     = csrf_meta_tags
 
   %body.admin
-    = render :partial => 'site_bar'
+    = render :partial => 'home/site_bar'
 
     .container
       .sixteen.columns
         .four.columns.alpha
-          = render :partial => 'home/sidebar'
+          = render :partial => 'home/nav'
         .twelve.columns.omega
           = yield
 

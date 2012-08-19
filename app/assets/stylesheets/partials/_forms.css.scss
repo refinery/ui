@@ -1,0 +1,38 @@
+input.widest {
+  width: 100%;
+}
+
+textarea.wysiwyg {
+  width: 100%;
+  height: 400px;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+label.inline-label {
+  display: inline;
+}
+
+.advanced_options {
+  margin-top: 15px;
+  input[type='text'], textarea, select {
+    width: 80%;
+  }
+
+  div.folding {
+    margin-top: 15px;
+  }
+}
+
+.form_actions {
+  margin-top: 15px;
+  .save {
+    color: #509958;
+  }
+
+  .remove {
+    color: #920008;
+  }
+}
