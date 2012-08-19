@@ -14,9 +14,9 @@
 
     .container
       .sixteen.columns
-        .four.columns.alpha
+        .four.columns.alpha#nav
           = render :partial => 'home/nav'
-        .twelve.columns.omega
+        .twelve.columns.omega#content
           = yield
 
     = yield :javascripts

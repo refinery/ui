@@ -1,7 +1,7 @@
 %h1.title
   Add a page
 
-= form_tag('#', :method => :post) do
+= form_tag('#', :method => :post, :class => 'row') do
   = label_tag 'title'
   = text_field_tag 'title', nil, :placeholder => 'Post title', :class => 'widest'
 

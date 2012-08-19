@@ -1,18 +1,18 @@
-%nav#main_nav
+- if false
   %p
     = select_tag 'switch_locale', options_for_select([['English', 1], ['Français', 2], ['Portugues', 3]]), :prompt => 'Switch language'
 
-  %ul
-    %li.first= link_to 'Dashboard', '#'
-    %li= link_to 'Pages', '#'
-    %li= link_to 'Files', '#'
-    %li= link_to 'Images', '#'
-    %li= link_to 'Users', '#'
-    %li 
-      = link_to 'Blog', '#'
-      %ul
-        %li= link_to 'Categories', '#'
-        %li= link_to 'Posts', '#'
-        %li= link_to 'Settings', '#'
-    %li= link_to 'News', '#'
-    %li= link_to 'Copywriting', '#'
+%ul
+  %li.first= link_to 'Dashboard', '#'
+  %li= link_to 'Pages', '#'
+  %li= link_to 'Files', '#'
+  %li= link_to 'Images', '#'
+  %li= link_to 'Users', '#'
+  %li 
+    = link_to 'Blog', '#'
+    %ul
+      %li= link_to 'Categories', '#'
+      %li= link_to 'Posts', '#'
+      %li= link_to 'Settings', '#'
+  %li= link_to 'News', '#'
+  %li= link_to 'Copywriting', '#'

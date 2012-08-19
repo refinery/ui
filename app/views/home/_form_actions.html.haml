@@ -1,10 +1,8 @@
-.form_actions 
+.form_actions.row
   .six.columns.alpha
     = submit_tag 'Save', :class => 'save'
     = submit_tag 'Save and Continue Editing'
     = button_tag 'Cancel', :confirm => 'Are you sure you want to cancel? You\'ll lose any unsaved changes!'
-    %fieldset
-      = check_box_tag :draft
-      = label_tag :draft, "Mark as draft", :class => 'inline-label'
-  .two.columns.offset-by-four.omega
+  .six.columns.omega
     = button_tag 'Remove', :confirm => 'Are you sure you want to permanently remove this page?', :class => 'remove'
+
