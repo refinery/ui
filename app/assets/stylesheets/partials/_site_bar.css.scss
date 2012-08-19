@@ -2,11 +2,13 @@
   background: transparent image-url('site_bar.png') top left repeat;
   color: #DDDDDD;
   margin-bottom: 25px;
-  padding: 20px 0;
+  padding: 25px 0;
   width: 100%;
+  border-bottom: 2px solid white;
 
   a {
-    color: #DDDDDD;
+    color: $refinery_blue;
+    text-decoration: none;
   }
 
   #site_name {

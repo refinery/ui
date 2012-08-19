@@ -1,0 +1,42 @@
+#nav {
+  position: relative;
+  left: 20px;
+
+  ul, li { margin: 0; font-size: 100%;}
+  a { text-decoration: none; }
+
+  > ul {
+    > li {
+      background-color: $less_subtle_grey;
+      > ul {
+        display: none;
+      }
+    }
+  }
+
+  ul {
+
+    a {
+      display: block;
+      padding: 10px;
+      border-bottom: 1px solid $mostly_grey;
+    }
+
+
+    li.current {
+      background-color: $subtle_grey;
+      > ul {
+        background-color: $refinery_blue;
+
+        a { 
+          color: #FFF;
+          border-bottom: 2px solid $refinery_blue;
+
+          &.add {
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+}

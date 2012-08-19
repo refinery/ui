@@ -12,6 +12,21 @@
  *= require_self
  */
 
+@import "partials/variables";
 @import "partials/site_bar";
 @import "partials/headings";
 @import "partials/forms";
+@import "partials/nav";
+
+body {
+  //background: transparent image-url('background.png') repeat;
+  background-color: $mostly_grey;
+}
+
+#content {
+  background: $subtle_grey;
+  box-sizing: border-box;
+  padding: 35px 10px 10px 10px;
+  position: relative;
+  top: -35px;
+}

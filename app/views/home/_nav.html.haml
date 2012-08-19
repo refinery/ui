@@ -4,15 +4,32 @@
 
 %ul
   %li.first= link_to 'Dashboard', '#'
-  %li= link_to 'Pages', '#'
-  %li= link_to 'Files', '#'
-  %li= link_to 'Images', '#'
-  %li= link_to 'Users', '#'
-  %li 
+  %li.current.submenu
+    = link_to 'Pages', '#'
+    %ul
+      %li= link_to 'Add a page', '#', :class => 'add'
+      %li= link_to 'Reorder Pages', '#'
+  %li.submenu
+    = link_to 'Files', '#'
+    %ul
+      %li= link_to 'Upload a file', '#', :class => 'add'
+  %li.submenu
+    = link_to 'Images', '#'
+    %ul
+      %li= link_to 'Upload an image', '#', :class => 'add'
+  %li.submenu
+    = link_to 'Users', '#'
+    %ul
+      %li= link_to 'Add a user', '#', :class => 'add'
+  %li.submenu
     = link_to 'Blog', '#'
     %ul
-      %li= link_to 'Categories', '#'
-      %li= link_to 'Posts', '#'
-      %li= link_to 'Settings', '#'
-  %li= link_to 'News', '#'
-  %li= link_to 'Copywriting', '#'
+      %li= link_to 'Manage Categories', '#'
+      %li= link_to 'Manage Posts', '#'
+      %li= link_to 'Update Settings', '#'
+  %li.submenu
+    = link_to 'News', '#'
+    %ul
+      %li= link_to 'Add a news article', '#', :class => 'add'
+  %li.last
+    = link_to 'Copywriting', '#'

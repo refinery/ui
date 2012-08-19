@@ -23,4 +23,15 @@ $(function() {
     $('div.folding', $(this).parent()).slideToggle();
   });
 
+  $('#nav li.current > ul').slideToggle();
+  $('#nav > ul > li').live('click', function(e) {
+    e.preventDefault();
+    $this = $(this);
+    if (!$this.hasClass('current')) {
+      $('#nav li.current').removeClass('current').children('ul').css('display', 'none');
+      $(this).addClass('current').children('ul').slideToggle();
+    }
+  });
+
+
 });
